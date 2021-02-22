@@ -59,7 +59,7 @@ jobs:
         run: npx surge --project ./build --domain sore-polish.surge.sh
       - name: Deploy to Production
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: npx surge --project ./build --domain fretful-silk.surge.sh
+        run: npx surge --project ./build --domain sore-polish.surge.sh
       - name: Upload Code Coverage Reports
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx codecov
