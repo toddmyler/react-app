@@ -22,10 +22,10 @@ jobs:
           CI: true
       - name: Build Project
         if: github.event_name == 'push'
-        run: npm run build 
+        run: npm run build
       - name: Deploy to Staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain sore-polish.surge.sh
-        env: 
+        env:
           SURGE-LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
