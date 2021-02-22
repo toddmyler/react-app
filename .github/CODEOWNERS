@@ -1,0 +1,4 @@
+* @toddmyler
+*.js @toddmyler
+*.yml @toddmyler
+/public/ @toddmyler
